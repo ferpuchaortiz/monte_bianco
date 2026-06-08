@@ -1,0 +1,396 @@
+/* ROOT COLOURS */
+:root {
+  font-size: 100%;
+
+  /* Brand */
+  --blue-main: #cfe9ff;
+  --blue-light: #e9f5ff;
+  --blue-accent: #4f8fd9;
+  --white: #ffffff;
+  --grey-text: #333333;
+  --shadow: rgba(0, 0, 0, 0.12);
+
+  /* Flavour pastels */
+  --pastel-cream: #fff7e6;
+  --pastel-pink: #ffd6e8;
+  --pastel-blue: #d6ecff;
+  --pastel-green: #d9f7d9;
+  --pastel-yellow: #fff2b3;
+  --pastel-lilac: #f0e1ff;
+  --pastel-mint: #e0fff4;
+  --pastel-peach: #ffe0cc;
+  --pastel-rose: #ffe6f2;
+  --pastel-aqua: #d9f9ff;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--white);
+  color: var(--grey-text);
+}
+
+/* HEADER + NAV */
+.site-header {
+  background-color: var(--blue-accent);
+  color: var(--white);
+  padding: 1.5rem 5%;
+}
+
+.site-header-inner {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.site-title {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.main-nav {
+  display: inline-block;
+  float: right;
+}
+
+.main-nav ul {
+  list-style: none;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+.main-nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+/* GENERIC LAYOUT */
+.page-wrapper {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 2rem 5%;
+}
+
+/* HERO SECTION (HOME) */
+.hero {
+  background: linear-gradient(to right, var(--blue-light), var(--white));
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 0.4rem 1.2rem var(--shadow);
+  margin-top: 2rem;
+}
+
+.hero-inner {
+  display: inline-block;
+  width: 55%;
+  vertical-align: top;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.hero-cta {
+  display: inline-block;
+  background-color: var(--blue-accent);
+  color: var(--white);
+  padding: 0.8rem 1.6rem;
+  border-radius: 999rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-image {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  text-align: right;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 1.5rem;
+}
+
+/* FLAVOUR CIRCLES (HOME) */
+.flavour-section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.flavour-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.flavour-grid {
+  text-align: center;
+}
+
+.flavour {
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0.3rem 1rem var(--shadow);
+  text-align: center;
+  vertical-align: top;
+}
+
+.flavour h3 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.flavour p {
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+/* Flavour colours */
+.vanilla { background-color: var(--pastel-cream); }
+.strawberry { background-color: var(--pastel-pink); }
+.chocolate { background-color: var(--pastel-peach); }
+.mint { background-color: var(--pastel-mint); }
+.pistachio { background-color: var(--pastel-green); }
+.lemon { background-color: var(--pastel-yellow); }
+.blueberry { background-color: var(--pastel-blue); }
+.caramel { background-color: var(--pastel-rose); }
+.cottoncandy { background-color: var(--pastel-lilac); }
+.matcha { background-color: var(--pastel-aqua); }
+
+/* SECTION TITLES */
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* MENU PAGE */
+.menu-intro {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.menu-grid {
+  text-align: center;
+}
+
+.menu-item {
+  display: inline-block;
+  width: 28%;
+  min-width: 12rem;
+  margin: 1rem;
+  background-color: var(--blue-light);
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 1rem var(--shadow);
+  padding: 1.5rem 1rem;
+  vertical-align: top;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.menu-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.menu-item p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.menu-meta {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.menu-price {
+  font-weight: bold;
+}
+
+/* ABOUT PAGE */
+.about-layout {
+  margin-top: 2rem;
+}
+
+.about-block {
+  background-color: var(--blue-light);
+  border-radius: 1rem;
+  padding: 1.8rem;
+  box-shadow: 0 0.3rem 1rem var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.about-block h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.about-block p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.about-block ul {
+  margin-top: 0.8rem;
+  padding-left: 1.5rem;
+}
+
+.team-grid {
+  text-align: center;
+}
+
+.team-member {
+  display: inline-block;
+  width: 28%;
+  min-width: 12rem;
+  margin: 1rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 1rem var(--shadow);
+  padding: 1.5rem 1rem;
+  vertical-align: top;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.team-member h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.team-member p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* CONTACT PAGE */
+.contact-layout {
+  margin-top: 2rem;
+}
+
+.contact-columns {
+  text-align: center;
+}
+
+.contact-info,
+.contact-form-wrapper {
+  display: inline-block;
+  width: 45%;
+  min-width: 14rem;
+  margin: 1rem;
+  vertical-align: top;
+}
+
+.contact-info {
+  background-color: var(--blue-light);
+  border-radius: 1rem;
+  padding: 1.8rem;
+  box-shadow: 0 0.3rem 1rem var(--shadow);
+  text-align: left;
+}
+
+.contact-info h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.6rem;
+}
+
+.contact-info a {
+  color: var(--blue-accent);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-form-wrapper {
+  background-color: var(--blue-light);
+  border-radius: 1rem;
+  padding: 1.8rem;
+  box-shadow: 0 0.3rem 1rem var(--shadow);
+  text-align: left;
+}
+
+.contact-form-wrapper h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--blue-accent);
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.contact-form button {
+  background-color: var(--blue-accent);
+  color: var(--white);
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* FOOTER */
+.site-footer {
+  margin-top: 3rem;
+  padding: 1.5rem 5%;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666666;
+  background-color: var(--blue-light);
+}
